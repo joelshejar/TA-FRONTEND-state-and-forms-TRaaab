@@ -40,7 +40,7 @@ class App extends React.Component{
         return questions.map((pair)=>{
                 return(
                     <>
-                        <button onClick={()=>this.handleClick(pair)}>{pair.Q}</button>
+                        <button key={pair.Q.split(' ')[0]} onClick={()=>this.handleClick(pair)}>{pair.Q}</button>
                         <p className={pair.Q.split(' ')[0]===this.state.active?
                             'active':'hidden'}>{pair.A}</p>
                     </>

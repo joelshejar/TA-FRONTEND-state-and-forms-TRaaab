@@ -1,0 +1,11 @@
+.courier{
+    font-family: 'Courier New', Courier, monospace;
+}
+.sans{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.franklin{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 200px;
+}

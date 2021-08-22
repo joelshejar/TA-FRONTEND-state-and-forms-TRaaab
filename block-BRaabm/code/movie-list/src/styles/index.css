@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(8, 7, 7);
+}
+#root{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+h2{
+    padding: 6px;
+    text-align: center;
+    background-color: black;
+    color: rgb(66, 124, 66);
+    font-weight: 200;
+    letter-spacing: 4px;
+    cursor: pointer;
+    width: 200px;
+    margin-right: 10px;
+}
+p{
+    opacity: 0;
+}
+p:hover{
+    opacity: 100;
+}
+.hide{
+    display: none;
+}
+
+.show{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    left:50%;
+    position: fixed;
+    top:50%;
+    transform: translate(-50%,-50%);    
+}
+h5{
+    color: black;
+}

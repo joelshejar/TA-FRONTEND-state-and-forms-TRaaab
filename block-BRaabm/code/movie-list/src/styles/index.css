@@ -36,3 +36,6 @@ p:hover{
     top:50%;
     transform: translate(-50%,-50%);    
 }
+h5{
+    color: black;
+}

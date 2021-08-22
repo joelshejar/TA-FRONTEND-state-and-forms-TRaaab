@@ -11,10 +11,10 @@ class App extends React.Component{
             movieName:{}
         }
     }
-    handleModal=(pp)=>{
+    handleModal=(movie)=>{
         this.setState({
             showModal:true,
-            movieName:pp,
+            movieName:movie,
         })
         console.log(this.state.movieName)
     }
@@ -25,8 +25,7 @@ class App extends React.Component{
             return(<h2 key={movie.Title}>{movie.Title}
                 <p onClick={()=>this.handleModal({movie})}>More Info</p>
             </h2>)
-        })
-         
+        })         
     }
         <Modal show={this.state.showModal} sent={this.state.movieName}/>
     </>

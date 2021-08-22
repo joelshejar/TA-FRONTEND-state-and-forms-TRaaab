@@ -11,21 +11,26 @@ class App extends React.Component{
             movieName:''
         }
     }
-    handleModal=(p)=>{
+    handleModal=(pp)=>{
         this.setState({
             showModal:true,
-            movieName:p,
+            movieName:pp,
         })
+        console.log(this.state.movieName)
     }
     render(){
-        return {
-            data.map((movie)=>{
+        return (
+            <>
+            {data.map((movie)=>{
             return(<h2 key={movie.Title}>{movie.Title}
                 <p onClick={()=>this.handleModal({movie})}>More Info</p>
             </h2>)
         })
-            Modal show={this.state.showModal} sent={this.state.movieName}/>
+         
     }
+        <Modal show={this.state.showModal} sent={this.state.movieName}/>
+    </>
+    )
 }
 }
 

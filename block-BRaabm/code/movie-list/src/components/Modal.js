@@ -1,10 +1,11 @@
 import '../styles/index.css'
 
-const Modal =({show,close,sent})=>{
+const Modal =({show,sent})=>{
     let modalClassName = show?'show':'hide'
     return(
         <div className={modalClassName}>
-            <h3>{sent.Plot}</h3>
+            <h5>{sent.Plot}</h5>
+            <h5>close</h5>
         </div>
     )
 }

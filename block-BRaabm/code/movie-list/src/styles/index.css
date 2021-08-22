@@ -4,6 +4,7 @@ body{
 #root{
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 h2{
     padding: 6px;
@@ -24,4 +25,14 @@ p:hover{
 }
 .hide{
     display: none;
+}
+
+.show{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    left:50%;
+    position: fixed;
+    top:50%;
+    transform: translate(-50%,-50%);    
 }

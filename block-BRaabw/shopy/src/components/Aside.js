@@ -24,7 +24,7 @@ class Aside extends React.Component{
         let sizes=['XS','S','M','ML','L','XL','XXL']
         return(
             <>
-            <div>
+            <div className='size'>
                 {sizes.map((elm,i)=>{
                     return(
                     <>
